@@ -6,8 +6,8 @@ class Table extends Component {
         super(props);
     }
 
-    DeleteAeroplane= () =>{
-        axios.delete('https://localhost:44356/api/aeroplanes/'+this.props.obj.id)
+    DeleteFlight= () =>{
+        axios.delete('https://localhost:44356/api/flights/'+this.props.obj.id)
             .then(res => {
                 window.location.reload()
             })
@@ -16,22 +16,19 @@ class Table extends Component {
         return (
             <tr>
                 <td>
-                    {this.props.obj.name}
+                    {this.props.obj.departure.name}
                 </td>
                 <td>
-                    {this.props.obj.capacity}
+                    {this.props.obj.destination.name}
                 </td>
                 <td>
-                    {this.props.obj.takeoffEffortPerOccupiedSeat}
+                    <Link to={"/Flights/"+this.props.obj.id} className="btn btn-success">Details</Link>
                 </td>
                 <td>
-                    {this.props.obj.fuelConsumptionPerSeat}
+                    <Link to={"/Flights/edit/"+this.props.obj.id} className="btn btn-success">Edit</Link>
                 </td>
                 <td>
-                    <Link to={"/Aeroplanes/edit/"+this.props.obj.id} className="btn btn-success">Edit</Link>
-                </td>
-                <td>
-                    <button type="button" onClick={this.DeleteAeroplane} className="btn btn-danger">Delete</button>
+                    <button type="button" onClick={this.DeleteFlight} className="btn btn-danger">Delete</button>
                 </td>
             </tr>
         );

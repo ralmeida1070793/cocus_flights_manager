@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using GeoCoordinatePortable;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,23 +15,10 @@ namespace Extensions
 
         private static double Calculate(KeyValuePair<double,double> departure, KeyValuePair<double, double> destination)
         {
-            double interval = destination.Value - departure.Value;
-            double distance = Math.Sin(Degree2radians(destination.Key)) * Math.Sin(departure.Key) + Math.Cos(Degree2radians(destination.Key)) * Math.Cos(Degree2radians(departure.Key)) * Math.Cos(Degree2radians(interval));
-            distance = Math.Acos(distance);
-            distance = Radians2degree(distance);
+            var departureCoordinates = new GeoCoordinate(departure.Key, departure.Value);
+            var destinationCoordinates = new GeoCoordinate(destination.Key, destination.Value);
 
-            //For Nautical Miles
-            return distance * 60 * 1.1515 * 0.8684;
-        }
-
-        private static double Degree2radians(double degree)
-        {
-            return (degree * Math.PI / 180.0);
-        }
-
-        private static double Radians2degree(double radians)
-        {
-            return (radians / Math.PI * 180.0);
+            return departureCoordinates.GetDistanceTo(destinationCoordinates);
         }
     }
 }
