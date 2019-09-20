@@ -22,3 +22,4 @@ C:\Users\rui.almeida\source\repos\cocus_flights_manager\CocusFlightAPI\Entities\
 C:\Users\rui.almeida\source\repos\cocus_flights_manager\CocusFlightAPI\Entities\obj\Debug\netcoreapp2.2\Entities.AssemblyInfo.cs
 C:\Users\rui.almeida\source\repos\cocus_flights_manager\CocusFlightAPI\Entities\obj\Debug\netcoreapp2.2\Entities.dll
 C:\Users\rui.almeida\source\repos\cocus_flights_manager\CocusFlightAPI\Entities\obj\Debug\netcoreapp2.2\Entities.pdb
+C:\Users\rui.almeida\source\repos\cocus_flights_manager\CocusFlightAPI\Entities\obj\Debug\netcoreapp2.2\Entities.csprojAssemblyReference.cache

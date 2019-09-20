@@ -19,3 +19,4 @@ C:\Users\rui.almeida\source\repos\cocus_flights_manager\CocusFlightAPI\Database\
 C:\Users\rui.almeida\source\repos\cocus_flights_manager\CocusFlightAPI\Database\obj\Debug\netcoreapp2.2\Database.AssemblyInfo.cs
 C:\Users\rui.almeida\source\repos\cocus_flights_manager\CocusFlightAPI\Database\obj\Debug\netcoreapp2.2\Database.dll
 C:\Users\rui.almeida\source\repos\cocus_flights_manager\CocusFlightAPI\Database\obj\Debug\netcoreapp2.2\Database.pdb
+C:\Users\rui.almeida\source\repos\cocus_flights_manager\CocusFlightAPI\Database\obj\Debug\netcoreapp2.2\Database.csprojAssemblyReference.cache

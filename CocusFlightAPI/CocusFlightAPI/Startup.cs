@@ -33,7 +33,11 @@ namespace CocusFlightAPI
             services.AddSingleton<FlightService>();
             services.AddSingleton<AeroplaneService>();
             services.AddSingleton<AirportService>();
-            
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -50,6 +54,7 @@ namespace CocusFlightAPI
                 app.UseHsts();
             }
 
+            app.UseCors(options => options.AllowAnyOrigin());
             app.UseHttpsRedirection();
             app.UseMvc();
         }
