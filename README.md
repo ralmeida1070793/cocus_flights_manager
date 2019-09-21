@@ -14,3 +14,7 @@ The application consists in a RESTApi developed in .Net Core 2.2 and a frontend 
 The RESTApi was developed taking into consideration the Test Driven Development methodology, as well as a modular architecture, in which a class library was created in the solution in order to encapsulate the Database logic, the Business Services Logic and the Entity Models. In addition, the architecture takes special emphasys in Generalization through templated interfaces, Dependency injection, as well as MVVM patterns.
 
 The presistance of the data was assured by an SQLExpress database, created by the Code-First methodology.
+
+It's worth notice that I didn't have had any experience with REACT prior to this exercise, but I welcome any opportunity to learn something new.
+
+Thanks for the challenge. It was fun.
