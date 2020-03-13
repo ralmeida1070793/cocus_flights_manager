@@ -23,3 +23,7 @@ The persistence of the data was assured by an SQLExpress database, created by th
 It's worth notice that I didn't have had any experience with REACT prior to this exercise, but I welcome any opportunity to learn something new. 
 
 Thanks for the challenge. It was fun. 
+
+# Redaction
+
+The project has a few problems. The main one is the fact that all the services are being set as singletons but without dependency injection on the controllers, which makes testing trickier.
